@@ -26,9 +26,11 @@ const usuarioJSON = JSON.stringify(usuario);
 console.log(usuarioJSON);
 
 // Saída esperada: '{"nome":"Júlia","idade":25,"sexo":"feminino"}'
+```
 
 ### Exemplo 2:
 
+``` js
 // JSON.parse() para converter a string JSON de volta para um objeto JavaScript
 
 const string = '{"nome":"Júlia","idade":25,"sexo":"feminino"}'; 
@@ -45,7 +47,69 @@ console.log(usuarioObjeto.idade);
 ● Substituir "baseada" por "tem origem"
 
 
+Utilizando alguns métodos que o JavaScript oferece conseguimos resolver facilmente esses problemas.
 
+str.includes("Script") é um método que procura exatamente essa sequência de caracteres na string.
 
+``` js
 
+let str = "JavaScript é baseada em ECMAScript";
+str.includes("Script");
+ 
+//Saída esperada: true
 
+```
+
+str.replace("JavaScript ", "") esse método encontra a primeira ocorrência de "JavaScript " e substitui por uma string vazia ("").
+
+``` js
+
+let str = "JavaScript é baseada em ECMAScript";
+str.replace("JavaScript ", ""); 
+
+//Saída esperada: "é baseada em ECMAScript"
+
+```
+
+Com o mesmo método str.replace vamos conseguir resolver o terceiro problema, mas com os parâmetros diferentes ("baseada", "tem origem") encontra a palavra "baseada" e a substitui pela palavra "tem origem".
+
+``` js
+
+let str = "JavaScript é baseada em ECMAScript";
+str.replace("baseada", "tem origem"); 
+
+//Saída esperada: "JavaScript é tem origem em ECMAScript"
+
+```
+
+## Questão 4 - Qual a vantagem de usar template strings (``) em vez de concatenação com + para criar strings complexas?
+
+A principal vantagem da template string é que ela permite a inclusão direta de variáveis e expressões JavaScript que estejam dentro da string usando a sua sintaxe ${expressão}. O código fica muito mais limpo e legível, eliminando a necessidade de fechar e reabrir aspas e usar o operador + repetidamente.
+
+### Exemplo 1:
+
+``` js
+let nome = 'Wallisson';
+let nota = 9.5;
+
+// Concatenação usando +
+let mensagem = 'O aluno ' + nome + ' tirou a nota ' + nota + ' no teste.';
+
+console.log(mensagem);
+// Saída: O aluno Wallisson tirou a nota 9.5 na prova.
+
+```
+
+### Exemplo 2:
+
+``` js
+let nome = 'Wallisson';
+let nota = 9.5;
+
+// Template String usando a crases e ${}
+let mensagem = 'O aluno ${nome} tirou a nota ${nota} no teste.';
+
+console.log(mensagem);
+// Saída: O aluno Wallisson tirou a nota 9.5 na prova.
+
+```
