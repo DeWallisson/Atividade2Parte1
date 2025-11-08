@@ -43,7 +43,9 @@ console.log(usuarioObjeto.idade);
 
 ## Questão 3 - Considerando a string "JavaScript é baseada em ECMA Script", quais métodos você usaria para:
 ● Verificar se contém a palavra "Script";
+
 ● Remover a palavra "JavaScript" e gerar uma nova string;
+
 ● Substituir "baseada" por "tem origem"
 
 
@@ -90,13 +92,13 @@ A principal vantagem da template string é que ela permite a inclusão direta de
 
 ``` js
 let nome = 'Wallisson';
-let nota = 9.5;
+let nota = 7;
 
 // Concatenação usando +
 let mensagem = 'O aluno ' + nome + ' tirou a nota ' + nota + ' no teste.';
 
 console.log(mensagem);
-// Saída: O aluno Wallisson tirou a nota 9.5 na prova.
+// Saída: O aluno Wallisson tirou a nota 7 na prova.
 
 ```
 
@@ -104,12 +106,12 @@ console.log(mensagem);
 
 ``` js
 let nome = 'Wallisson';
-let nota = 9.5;
+let nota = 7;
 
 // Template String usando a crases e ${}
 let mensagem = 'O aluno ${nome} tirou a nota ${nota} no teste.';
 
 console.log(mensagem);
-// Saída: O aluno Wallisson tirou a nota 9.5 na prova.
+// Saída: O aluno Wallisson tirou a nota 7 na prova.
 
 ```
