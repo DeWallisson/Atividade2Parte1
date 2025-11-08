@@ -11,9 +11,9 @@ Os métodos JSON.stringify() e JSON.parse() lidam com a conversão entre o forma
 
 ### Exemplo 1:
 
+``` js
 // Objeto JavaScript
 
-``` js
     const usuario = {
     nome: "Júlia",
     idade: 25,
@@ -25,7 +25,7 @@ Os métodos JSON.stringify() e JSON.parse() lidam com a conversão entre o forma
 const usuarioJSON = JSON.stringify(usuario);
 console.log(usuarioJSON);
 
-// Saída esperada: '{"nome":"Júlia","idade":25,"sexo":"feminino"}' ```
+// Saída esperada: '{"nome":"Júlia","idade":25,"sexo":"feminino"}'
 
 ### Exemplo 2:
 
@@ -37,6 +37,15 @@ const usuarioObjeto = JSON.parse(string);
 console.log(usuarioObjeto.idade);
 
 // Saída: 25 (agora é um objeto nativo do JavaScript)
+```
+
+## Questão 3 - Considerando a string "JavaScript é baseada em ECMA Script", quais métodos você usaria para:
+● Verificar se contém a palavra "Script";
+● Remover a palavra "JavaScript" e gerar uma nova string;
+● Substituir "baseada" por "tem origem"
+
+
+
 
 
 
