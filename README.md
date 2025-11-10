@@ -95,7 +95,7 @@ let nome = 'Wallisson';
 let nota = 7;
 
 // Concatenação usando +
-let mensagem = 'O aluno ' + nome + ' tirou a nota ' + nota + ' no teste.';
+let mensagem = 'O aluno ' + nome + ' tirou a nota ' + nota + ' na prova.';
 
 console.log(mensagem);
 // Saída: O aluno Wallisson tirou a nota 7 na prova.
@@ -109,7 +109,7 @@ let nome = 'Wallisson';
 let nota = 7;
 
 // Template String usando a crases e ${}
-let mensagem = 'O aluno ${nome} tirou a nota ${nota} no teste.';
+let mensagem = 'O aluno ${nome} tirou a nota ${nota} na prova.';
 
 console.log(mensagem);
 // Saída: O aluno Wallisson tirou a nota 7 na prova.
